@@ -69,6 +69,15 @@
                                 "index": 6,
                                 "sectionItemType": "field",
                                 "startCol": 0
+                            },
+                            {
+                                "endCol": 2,
+                                "fieldId": "aiinsights",
+                                "height": 22,
+                                "id": "incident-aiInsights-field",
+                                "index": 7,
+                                "sectionItemType": "field",
+                                "startCol": 0
                             }
                         ],
                         "maxW": 3,

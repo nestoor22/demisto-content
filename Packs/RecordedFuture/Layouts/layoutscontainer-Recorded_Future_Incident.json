@@ -370,6 +370,15 @@
                                 "index": 5,
                                 "sectionItemType": "field",
                                 "startCol": 0
+                            },
+                            {
+                                "endCol": 2,
+                                "fieldId": "aiinsights",
+                                "height": 22,
+                                "id": "ec111430-e2ab-11ec-a31f-b5ecf745ab02",
+                                "index": 6,
+                                "sectionItemType": "field",
+                                "startCol": 0
                             }
                         ],
                         "maxW": 3,

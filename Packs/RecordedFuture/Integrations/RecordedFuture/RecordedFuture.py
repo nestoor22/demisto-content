@@ -13,7 +13,7 @@ STATUS_TO_RETRY = [500, 501, 502, 503, 504]
 # disable insecure warnings
 requests.packages.urllib3.disable_warnings()  # type: ignore
 
-__version__ = '2.5.0'
+__version__ = '2.5.1'
 
 
 # === === === === === === === === === === === === === === ===
@@ -331,6 +331,8 @@ class Client(BaseClient):
     def submit_detection_to_collective_insight(self) -> Dict[str, Any]:
         return self._call(url_suffix='/v2/collective-insights/detections')
 
+    def set_alert_assignee(self) -> Dict[str, Any]:
+        return self._call(url_suffix='/v2/alert/set_assignee')
 
 # === === === === === === === === === === === === === === ===
 # === === === === === === ACTIONS === === === === === === ===
@@ -468,6 +470,11 @@ class Actions:
         response = self.client.submit_detection_to_collective_insight()
         return self._process_result_actions(response=response)
 
+    def set_alert_assignee(self) -> List[CommandResults]:
+        response = self.client.set_alert_assignee()
+        return self._process_result_actions(response=response)
+
+
 # === === === === === === === === === === === === === === ===
 # === === === === === === === MAIN === === === === === === ==
 # === === === === === === === === === === === === === === ===
@@ -547,7 +554,8 @@ def main() -> None:  # pragma: no cover
 
         elif command == 'recordedfuture-alert-set-note':
             return_results(actions.alert_set_note_command())
-
+        elif command == 'recordedfuture-alert-set-assignee':
+            return_results(actions.set_alert_assignee())
         elif command == 'recordedfuture-threat-assessment':
             return_results(actions.triage_command())
 

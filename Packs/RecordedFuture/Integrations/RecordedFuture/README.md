@@ -1267,6 +1267,25 @@ Search for a malware by specified filters.
 |-----------------------------------------|----------|-----------------|
 | RecordedFuture.CollectiveInsight.status | string   | Request status  | 
 
+
+#### Base Command
+
+`recordedfuture-alert-set-assignee`
+
+#### Input
+
+| **Argument Name** | **Description** | **Required** |
+|-------------------|-----------------|--------------|
+| alert_id          | Alert ID        | Required     | 
+| assignee          | Assignee email  | Required     | 
+
+#### Context Output
+
+| **Path**                                | **Type** | **Description** |
+|-----------------------------------------|----------|-----------------|
+| RecordedFuture.CollectiveInsight.status | string   | Request status  | 
+
+
 ## Breaking changes from the previous version of this integration - Recorded Future v2
 
 Renamed the integration setting "Incident Sharing" to "Collective Insights", resetting any previous configuration to this setting. 
