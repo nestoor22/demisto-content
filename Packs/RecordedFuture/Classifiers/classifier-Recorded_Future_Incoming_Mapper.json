@@ -27,8 +27,13 @@
                 "occurred": {
                     "simple": "triggered"
                 },
-                "aiinsights": {
-                    "simple": "ai_insights"
+                "Recorded Future AI Insights": {
+                    "complex": {
+                        "accessor": "text",
+                        "filters": [],
+                        "root": "ai_insights",
+                        "transformers": []
+                    }
                 }
             }
         },

@@ -3053,16 +3053,16 @@ script:
   - name: recordedfuture-alert-set-assignee
     description: Change alert assignee
     arguments:
-      - name: alert_id
-        required: true
-        description: Alert ID
-      - name: assignee
-        required: true
-        description: Assignee email
+    - name: alert_id
+      required: true
+      description: Alert ID
+    - name: assignee
+      required: true
+      description: Assignee email
     outputs:
-      - contextPath: RecordedFuture.Alerts.status
-        description: Request status
-        type: String
+    - contextPath: RecordedFuture.Alerts.status
+      description: Request status
+      type: String
 
   isfetch: true
 tests:

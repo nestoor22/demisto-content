@@ -373,9 +373,9 @@
                             },
                             {
                                 "endCol": 2,
-                                "fieldId": "aiinsights",
+                                "fieldId": "recordedfutureaiinsights",
                                 "height": 22,
-                                "id": "ec111430-e2ab-11ec-a31f-b5ecf745ab02",
+                                "id": "incident_recordedfutureaiinsights",
                                 "index": 6,
                                 "sectionItemType": "field",
                                 "startCol": 0
