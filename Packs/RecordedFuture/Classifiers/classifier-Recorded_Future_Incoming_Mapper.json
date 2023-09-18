@@ -28,12 +28,7 @@
                     "simple": "triggered"
                 },
                 "Recorded Future AI Insights": {
-                    "complex": {
-                        "accessor": "text",
-                        "filters": [],
-                        "root": "ai_insights",
-                        "transformers": []
-                    }
+                    "simple": "ai_insights"
                 }
             }
         },
